@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.bar {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 50px;
+}
+
+@media(max-width: 360px) {
+    div.bar {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 350px) {
+    div.bar {
+        background-color: red;
+        font-size: 15px;
+    }
+}

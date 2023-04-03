@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+div.cards {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+div.card {
+    width: 300px;
+    background-color: black;
+    border-radius: 5px;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+div.card div {
+    color: white;
+    padding: 10px 5px;
+}
+
+div.card img {
+    width: 100%;
+}
+
+@media(max-width: 450px) {
+    div.card {
+        width: 100%;
+        background-color: black;
+        border-radius: 5px;
+        margin: 0px 10px;
+        text-align: center;
+    }
+}

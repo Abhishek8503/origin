@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsla(312, 66%, 76%, 1);
+
+background: linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+height: 100vh;
+background: -moz-linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(312, 66%, 76%, 1) 0%, hsla(234, 93%, 67%, 1) 100%);
+
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+div.container{
+    width: 432px;
+    height: 535px;
+    background: white;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+div.container header{
+        text-align: center;
+}
+
+img.logo {
+    width: 48px;
+    margin: 0px auto;
+}
+
+div.container h2.title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: black;
+    margin-top: 24px;
+
+}
+
+div.container h2.title span{
+    color:#6422cd ;
+}
+
+div.container div.login-message{
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin-top: 20px;
+}
+
+div.container form{
+    margin-top: 40px;
+    height: 109px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.container form input{
+    margin-top: 25px;
+    outline: none;
+    padding: 8px 12px;
+    height: 32px;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 213, 219);
+    font-size: 15px;
+}
+
+div.container form input:focus{
+    border-color: purple !important;
+}
+
+div.container form div.pass{
+    display: flex;
+    align-items: center;
+}
+
+div.container form div.pass input{
+    flex-grow: 1;
+}
+
+div.container form div.pass svg{
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+div.container form a{
+    margin: 24px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+div.container div.login button{
+    margin-top: 20px;
+    background-color: rgb(125, 43, 226);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+}
+
+div.container div.img {
+    margin: 20px;
+    border-bottom-color: rgb(229, 231, 235);
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+}

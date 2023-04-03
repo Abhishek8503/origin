@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container {
+    height: 400px;
+    background-color: black;
+    position: relative;
+}
+
+div.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffbf00ed;
+    animation-duration: 2s;
+    animation-name: motion;
+    animation-iteration-count: infinite;
+    position: absolute;
+    bottom: 0px;
+}
+
+div.ball:nth-child(2) {
+    background-color: red;
+    animation-delay: 0.5s;
+}
+
+div.ball:nth-child(3) {
+    background-color: green;
+    animation-delay: 1s;
+}
+
+
+@keyframes motion {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(100px, 100px);
+    }
+    50% {
+        transform: translate(0, 350px);
+    }
+    75% {
+        transform: translate(100px, 350px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        
+        .parent {
+            position: relative;
+        }
+        
+        .bot {
+            width: 50px;
+            height: 50px;
+            background-color: lime;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        div.first {
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            position: absolute;
+        }
+        div.second {
+            width: 400px;
+            height: 400px;
+            background-color: red;
+            position: relative;
+           
+        }
+        div.third {
+            width: 300px;
+            height: 300px;
+            background-color: black;
+            position: relative;
+            
+        }
+        div.child {
+            width: 50px;
+            height: 50px;
+            background-color: cyan;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 0px;
+        }
+        
+    </style>
+</head>
+
+<body>
+   <div class="first">
+        <div class="second">
+                <div class="third">
+                    <div class="child"></div>
+                </div>
+        </div>
+   </div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: rgb(64, 61, 69);
+}
+
+div.score {
+    display: flex;
+    justify-content: center;
+}
+
+div.score div.score1{
+        font-size: 80px;
+        color: white;
+        border: 5px solid white;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+}
+
+div.score div.user{
+    color: white;
+    background-color: red;
+    height: 20px;
+    width: 35px;
+    position: relative;
+    top: 90px;
+    left: 30px;
+    padding: 2px;
+}
+
+div.score div.comp{
+    color: white;
+    background-color: red;
+    height: 20px;
+    width: 41px;
+    position: relative;
+    top: 90px;
+    right: 28px;
+    padding: 2px;    
+}
+
+div.win{
+    color: cyan;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 100%;
+}
+
+div.game{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+
+div.game div.rock{
+    width: 100px;
+    margin: 10px;
+    
+}
+
+div.game div.paper{
+    width: 100px;
+    margin: 10px;
+    
+}
+
+div.game div.scissor{
+    width: 105px;
+    margin: 10px;
+    
+}
+
+div.move{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button :hover{
+    cursor: pointer;
+}

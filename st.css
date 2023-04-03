@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: orange;
+    animation-name: play;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes play {
+    from {
+        transform: scale(1);
+        border-radius: 100px;
+    }
+    to {
+        transform: scale(1.5);
+        border-radius: 20px;
+    }
+}
