@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="animation.css">
+    </head>
+    <body class = "">
+
+        <script src="./ani.js"></script>
+    <button onclick="toggleTheme()">Theme</button>
+    <style>
+        body {
+            transition: 1s ease;
+        }
+        body.dark {
+            background-color: black;
+            color: white;
+        }
+
+        body.light {
+            background-color: white;
+            color: black;
+        }
+    </style>
+        <!-- transition -->
+        <h1>transition</h1>
+        <div class="title">    
+            <div class="a"></div>
+            <div class="b">height animation</div>
+            <div class="c">easein</div>
+            <div class="d">easeout</div>
+            <div class="e">ease-in-out</div>
+        </div>
+        
+        <!-- trasform -->
+        <h1>transition-transform</h1>
+        <div class="title">
+            <div class="f">scale</div>
+            <div class="g">scalex</div>
+            <div class="h">scaley</div>
+            <div class="i">rotate <br>rotateX and Y</div>
+            <div class="j">skew</div>
+            <div class="k">translate</div>
+            <!-- translate-delay -->
+            <!-- can also add multiple transform in same line -->
+        </div>
+        <h1>animation</h1>
+        <div class="animation">
+            <div class="a1">animation</div>
+        </div>
+        <div class="container">
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+        <footer>This is it!</footer>
+
+        
+    </body>
+</html>
