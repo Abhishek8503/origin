@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+h1{
+    margin-left: 10px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+div.title{
+    display: flex;
+    margin: 20px;
+}
+
+div.a{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+div.a:hover{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+div.b{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    transition-property: height;
+    /* transition-property: all; */
+}
+
+div.b:hover{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+div.c{
+    background-color: purple;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+}
+
+div.c:hover{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+div.d{
+    background-color: teal;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+}
+
+div.d:hover{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+div.e{
+    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+div.e:hover{
+    height: 400px;
+    width: 400px;
+    background-color: red;
+}
+
+div.f{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+div.f:hover{
+    transform: scale(0.5);
+}
+
+div.g{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+div.g:hover{
+    transform: scaleX(2.5);
+}
+div.h{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+div.h:hover{
+    transform: scaleY(1.5);
+}
+div.i{
+    background-color: gray;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+}
+
+div.i:hover{
+    transform: rotate(45deg);
+}
+div.j{
+    background-color: maroon;
+    height: 200px;
+    width: 200px;
+    color: #fff;
+    transition-duration: 1s;
+}
+
+div.j:hover{
+    transform: skew(20deg,20deg);
+}
+div.k{
+    background-color: violet;
+    height: 200px;
+    width: 200px;
+    transition-duration: 1s;
+    /* shorthand */
+}
+
+div.k:hover{
+    transform: translate(30px,30px);
+}
+
+div.animation{
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    justify-content: center;
+}
+
+div.a1{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-color: crimson;
+    animation-duration: 1s;
+    animation-name: play;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+}
+
+@keyframes play{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.5);
+        border-radius: 45px;
+        background-color: purple;
+    }
+}
+
+div.a1::after{
+    content: " Hello";
+}
+
+div.container{
+    margin: 20px;
+    height: 500px;
+    background-color: teal;
+    position: relative;
+}
+
+div.ball{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-duration: 4s;
+    animation-name: movee ;
+    animation-iteration-count:infinite;
+}
+
+div.ball:nth-child(2){
+    background-color: red;
+    animation-delay: 0.5s;
+    position: relative;
+    bottom: 50px;
+}
+
+@keyframes movee {
+    0%{
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(500px,300px);
+        border-radius: 50%;
+    }
+    50%{
+        transform: translate(0,300px);
+        border-radius: 0%;
+    }75%{
+        transform: translate(600px,300px);
+        border-radius: 50%;
+    }
+    85%{
+        transform: translate(600px,0px);
+    }
+    100%{
+         transform: translate(0,0);
+
+    }
+}
