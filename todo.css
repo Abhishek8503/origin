@@ -63,3 +63,13 @@ body {
     color: #fff;
     border: 3px solid #fff;
 }
+
+.edit{
+    width: 42%;
+    border: 3px solid #432371;
+    background-color: #432371;
+    color: #fff;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
